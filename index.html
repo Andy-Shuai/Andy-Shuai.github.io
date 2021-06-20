@@ -1,228 +1,208 @@
-
+<!DOCTYPE html>
 <html>
   <head>
-    
-<meta charset="utf-8" >
+    <meta charset="utf-8" >
 
 <title>Andy&#39;s Blog</title>
-<meta name="description" content="欢迎来到 Andy 的 Blog">
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="shortcut icon" href="https://andy-shuai.github.io/favicon.ico?v=1624090914606">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+<link rel="shortcut icon" href="https://andy-shuai.github.io/favicon.ico?v=1624175779378">
 <link rel="stylesheet" href="https://andy-shuai.github.io/styles/main.css">
 
 
 
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
 
 
 
+    <meta name="description" content="欢迎来到 Andy&#39;s Blog">
+    
   </head>
   <body>
     <div id="app" class="main">
-      <div class="site-header-container">
-  <div class="site-header">
-    <div class="left">
-      <a href="https://andy-shuai.github.io">
-        <img class="avatar" src="https://andy-shuai.github.io/images/avatar.png?v=1624090914606" alt="" width="32px" height="32px">
-      </a>
-      <a href="https://andy-shuai.github.io">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://andy-shuai.github.io">
+        <img src="https://andy-shuai.github.io/images/avatar.png?v=1624175779378" class="site-logo">
         <h1 class="site-title">Andy&#39;s Blog</h1>
       </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
     </div>
-    <div class="right">
-      <transition name="fade">
-        <i class="icon" :class="{ 'icon-close-outline': menuVisible, 'icon-menu-outline': !menuVisible }" @click="menuVisible = !menuVisible"></i>
-      </transition>
-    </div>
-  </div>
-</div>
-
-<transition name="fade">
-  <div class="menu-container" style="display: none;" v-show="menuVisible">
-    <div class="menu-list">
+    <div>
       
         
-          <a href="/" class="menu purple-link">
+          <a href="/" class="site-nav">
             首页
           </a>
         
       
         
-          <a href="/archives" class="menu purple-link">
+          <a href="/archives" class="site-nav">
             归档
           </a>
         
       
         
-          <a href="/tags" class="menu purple-link">
+          <a href="/tags" class="site-nav">
             标签
           </a>
         
       
         
-          <a href="/post/about" class="menu purple-link">
+          <a href="/post/about" class="site-nav">
             关于
           </a>
         
       
     </div>
   </div>
-</transition>
-
-
-      <div class="content-container">
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="social-container">
+      
         
+      
         
-<section class="post-item">
-    <div class="content">
-      <a href="https://andy-shuai.github.io/post/nintendo-direct-e3-2021/">
-        <h2 class="post-title">Nintendo Direct E3 2021</h2>
-      </a>
-      <div class="post-abstract">
+      
         
-      </div>
-      <div class="post-info">
-        <span><i class="icon icon-calendar-outline"></i> 2021-06-19</span>
+      
         
-          <span>
-            <i class="icon icon-pricetags-outline"></i>
-            
-              <a href="https://andy-shuai.github.io/tag/1kOFgR6Mk/">
-                Nintendo
-                
-                  ，
-                
-              </a>
-            
-              <a href="https://andy-shuai.github.io/tag/_8NdL0Et7l/">
-                game
-                
-                  ，
-                
-              </a>
-            
-              <a href="https://andy-shuai.github.io/tag/kaQqYHnxCw/">
-                E3
-                
-                  ，
-                
-              </a>
-            
-              <a href="https://andy-shuai.github.io/tag/7jSbCu8sUK/">
-                Nintendo Direct
-                
-              </a>
-            
-          </span>
+      
         
-      </div>
+      
     </div>
-    
-      <a href="https://andy-shuai.github.io/post/nintendo-direct-e3-2021/">
-        <div class="feature-container" style="background-image: url('https://andy-shuai.github.io/post-images/nintendo-direct-e3-2021.png')">
-        </div>
-      </a>
-    
-  </section>
-
-<section class="post-item">
-    <div class="content">
-      <a href="https://andy-shuai.github.io/post/zao-shang-hao/">
-        <h2 class="post-title">早上好</h2>
-      </a>
-      <div class="post-abstract">
-        <p>今天是星期四</p>
-
-      </div>
-      <div class="post-info">
-        <span><i class="icon icon-calendar-outline"></i> 2021-06-10</span>
-        
-          <span>
-            <i class="icon icon-pricetags-outline"></i>
-            
-              <a href="https://andy-shuai.github.io/tag/Uh2D96anFb/">
-                日常
-                
-              </a>
-            
-          </span>
-        
-      </div>
+    <div class="site-description">
+      欢迎来到 Andy's Blog
     </div>
-    
-  </section>
+    <div class="site-footer">
+      Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://andy-shuai.github.io/atom.xml" target="_blank">RSS</a>
+    </div>
+  </div>
+</div>
 
-<section class="post-item">
-    <div class="content">
-      <a href="https://andy-shuai.github.io/post/hello-gridea/">
-        <h2 class="post-title">Hello Gridea</h2>
-      </a>
-      <div class="post-abstract">
-        <p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
+
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          
+            <article class="post-item">
+              <div class="left">
+                <a href="https://andy-shuai.github.io/post/nintendo-direct-e3-2021/">
+                  <h2 class="post-title">Nintendo Direct E3 2021</h2>
+                </a>
+                <div class="post-date">
+                  2021-06-19
+                </div>
+                <div class="post-abstract">
+                  <p>大乱闘スマッシュブラザーズ™ SPECIAL 有料追加コンテンツ第10弾 参戦映像公開！<br>
+2Dメトロイド19年ぶりの最新作<br>
+真•女神転生V 2021.11.11 発売日決定！<br>
+『ブレス オブ ザ ワイルド』続編 2022年発売</p>
+
+                </div>
+              </div>
+              
+                <a class="right" href="https://andy-shuai.github.io/post/nintendo-direct-e3-2021/">
+                  <div class="feature-container" style="background-image: url('https://andy-shuai.github.io/post-images/nintendo-direct-e3-2021.png')">
+                  </div>
+                </a>
+              
+            </article>
+          
+            <article class="post-item">
+              <div class="left">
+                <a href="https://andy-shuai.github.io/post/zao-shang-hao/">
+                  <h2 class="post-title">早上好</h2>
+                </a>
+                <div class="post-date">
+                  2021-06-10
+                </div>
+                <div class="post-abstract">
+                  <p>今天是星期四</p>
+
+                </div>
+              </div>
+              
+            </article>
+          
+            <article class="post-item">
+              <div class="left">
+                <a href="https://andy-shuai.github.io/post/photos/">
+                  <h2 class="post-title">Photos</h2>
+                </a>
+                <div class="post-date">
+                  2021-04-11
+                </div>
+                <div class="post-abstract">
+                  
+                </div>
+              </div>
+              
+            </article>
+          
+            <article class="post-item">
+              <div class="left">
+                <a href="https://andy-shuai.github.io/post/hello-gridea/">
+                  <h2 class="post-title">Hello Gridea</h2>
+                </a>
+                <div class="post-date">
+                  2018-12-12
+                </div>
+                <div class="post-abstract">
+                  <p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
 ✍️  <strong>Gridea</strong> 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...</p>
 
-      </div>
-      <div class="post-info">
-        <span><i class="icon icon-calendar-outline"></i> 2018-12-12</span>
-        
-          <span>
-            <i class="icon icon-pricetags-outline"></i>
-            
-              <a href="https://andy-shuai.github.io/tag/Mycisjua7/">
-                Gridea
-                
-              </a>
-            
-          </span>
-        
-      </div>
-    </div>
-    
-      <a href="https://andy-shuai.github.io/post/hello-gridea/">
-        <div class="feature-container" style="background-image: url('https://andy-shuai.github.io/post-images/hello-gridea.png')">
+                </div>
+              </div>
+              
+                <a class="right" href="https://andy-shuai.github.io/post/hello-gridea/">
+                  <div class="feature-container" style="background-image: url('https://andy-shuai.github.io/post-images/hello-gridea.png')">
+                  </div>
+                </a>
+              
+            </article>
+          
+            <article class="post-item">
+              <div class="left">
+                <a href="https://andy-shuai.github.io/post/konoyubitomaregoosehouse/">
+                  <h2 class="post-title">この指とまれ · Goose house</h2>
+                </a>
+                <div class="post-date">
+                  2017-12-18
+                </div>
+                <div class="post-abstract">
+                  <p>本文转载自：https://zhuanlan.zhihu.com/p/21928875<br>
+作为对Goose house的简单介绍</p>
+
+                </div>
+              </div>
+              
+                <a class="right" href="https://andy-shuai.github.io/post/konoyubitomaregoosehouse/">
+                  <div class="feature-container" style="background-image: url('https://andy-shuai.github.io/post-images/konoyubitomaregoosehouse.jpg')">
+                  </div>
+                </a>
+              
+            </article>
+          
+
+          <div class="pagination-container">
+  
+  
+</div>
+
         </div>
-      </a>
-    
-  </section>
-
-
-<div class="pagination-container">
-  
-  
-</div>
-
-
       </div>
-
-      <div class="site-footer">
-  <div class="slogan">欢迎来到 Andy 的 Blog</div>
-  <div class="social-container">
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-  </div>
-  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://andy-shuai.github.io/atom.xml" target="_blank">RSS</a>
-</div>
-
-
     </div>
-    <script type="application/javascript">
 
-hljs.initHighlightingOnLoad()
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script type="application/javascript">
+
+AOS.init();
 
 var app = new Vue({
   el: '#app',
@@ -232,6 +212,8 @@ var app = new Vue({
 })
 
 </script>
+
+
 
 
 

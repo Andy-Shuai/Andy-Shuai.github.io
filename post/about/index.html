@@ -1,19 +1,14 @@
-
 <!DOCTYPE html>
 <html>
   <head>
-    
-<meta charset="utf-8" >
+    <meta charset="utf-8" >
 
 <title>关于 | Andy&#39;s Blog</title>
-<meta name="description" content="欢迎来到 Andy 的 Blog">
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="shortcut icon" href="https://andy-shuai.github.io/favicon.ico?v=1624090914606">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+<link rel="shortcut icon" href="https://andy-shuai.github.io/favicon.ico?v=1624175779378">
 <link rel="stylesheet" href="https://andy-shuai.github.io/styles/main.css">
 
 
@@ -24,119 +19,150 @@
   
 
 
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
 
 
 
+    <meta name="description" content="
+欢迎来到我的小站呀，很高兴遇见你！🤝
+
+
+🏠 关于本站
+这里是我的个人网站／Blog
+👨‍💻 博主是谁
+我是 Andy
+⛹ 兴趣爱好
+Music 🎵
+Goose house
+Sports ⚽️🏀🎾🏐️
+FC Bayern
+..." />
+    <meta name="keywords" content="" />
   </head>
   <body>
     <div id="app" class="main">
-      <div class="site-header-container">
-  <div class="site-header">
-    <div class="left">
-      <a href="https://andy-shuai.github.io">
-        <img class="avatar" src="https://andy-shuai.github.io/images/avatar.png?v=1624090914606" alt="" width="32px" height="32px">
-      </a>
-      <a href="https://andy-shuai.github.io">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://andy-shuai.github.io">
+        <img src="https://andy-shuai.github.io/images/avatar.png?v=1624175779378" class="site-logo">
         <h1 class="site-title">Andy&#39;s Blog</h1>
       </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
     </div>
-    <div class="right">
-      <transition name="fade">
-        <i class="icon" :class="{ 'icon-close-outline': menuVisible, 'icon-menu-outline': !menuVisible }" @click="menuVisible = !menuVisible"></i>
-      </transition>
-    </div>
-  </div>
-</div>
-
-<transition name="fade">
-  <div class="menu-container" style="display: none;" v-show="menuVisible">
-    <div class="menu-list">
+    <div>
       
         
-          <a href="/" class="menu purple-link">
+          <a href="/" class="site-nav">
             首页
           </a>
         
       
         
-          <a href="/archives" class="menu purple-link">
+          <a href="/archives" class="site-nav">
             归档
           </a>
         
       
         
-          <a href="/tags" class="menu purple-link">
+          <a href="/tags" class="site-nav">
             标签
           </a>
         
       
         
-          <a href="/post/about" class="menu purple-link">
+          <a href="/post/about" class="site-nav">
             关于
           </a>
         
       
     </div>
   </div>
-</transition>
-
-
-      <div class="content-container">
-        <div class="post-detail">
-          
-          <h2 class="post-title">关于</h2>
-          <div class="post-info post-detail-info">
-            <span><i class="icon-calendar-outline"></i> 2019-01-25</span>
-            
-          </div>
-          <div class="post-content">
-            <blockquote>
-<p>欢迎来到我的小站呀，很高兴遇见你！🤝</p>
-</blockquote>
-<h2 id="关于本站">🏠 关于本站</h2>
-<h2 id="博主是谁">👨‍💻 博主是谁</h2>
-<h2 id="兴趣爱好">⛹ 兴趣爱好</h2>
-<h2 id="联系我呀">📬 联系我呀</h2>
-
-          </div>
-        </div>
-
-        
-      </div>
-
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="social-container">
       
         
-          <div id="gitalk-container"></div>
-        
-
+      
         
       
-
-      <div class="site-footer">
-  <div class="slogan">欢迎来到 Andy 的 Blog</div>
-  <div class="social-container">
-    
+        
       
-    
+        
       
-    
+        
       
-    
-      
-    
-      
-    
+    </div>
+    <div class="site-description">
+      欢迎来到 Andy's Blog
+    </div>
+    <div class="site-footer">
+      Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://andy-shuai.github.io/atom.xml" target="_blank">RSS</a>
+    </div>
   </div>
-  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://andy-shuai.github.io/atom.xml" target="_blank">RSS</a>
 </div>
 
 
-    </div>
-    <script type="application/javascript">
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <div class="post-detail">
+            <h2 class="post-title">关于</h2>
+            <div class="post-date">2021-06-10</div>
+            
+            <div class="post-content" v-pre>
+              <blockquote>
+<p>欢迎来到我的小站呀，很高兴遇见你！🤝</p>
+</blockquote>
+<!-- more -->
+<h2 id="关于本站">🏠 关于本站</h2>
+<p>这里是我的个人网站／Blog</p>
+<h2 id="博主是谁">👨‍💻 博主是谁</h2>
+<p>我是 Andy</p>
+<h2 id="兴趣爱好">⛹ 兴趣爱好</h2>
+<h3 id="music">Music 🎵</h3>
+<p>Goose house</p>
+<h3 id="sports-️️">Sports ⚽️🏀🎾🏐️</h3>
+<p>FC Bayern<br>
+Die 🇩🇪<br>
+Steve Nash<br>
+Golden States Warriors<br>
+Justin Henin</p>
+<h3 id="video-games">Video Games 🎮</h3>
+<p>The Legend of Zeda: Breath of the Wild<br>
+Persona 5<br>
+Xenoblade 2<br>
+Super Smash Bros™ Ultimate<br>
+Nier: Automata<br>
+Splatoon 2<br>
+Animal Crossing: New Horizons</p>
+<h3 id="internet-technology">Internet Technology</h3>
+<h2 id="联系我呀">📬 联系我呀</h2>
 
-hljs.initHighlightingOnLoad()
+            </div>
+            
+            
+
+            
+              
+                <div id="gitalk-container" data-aos="fade-in"></div>
+              
+
+              
+            
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script type="application/javascript">
+
+AOS.init();
 
 var app = new Vue({
   el: '#app',
@@ -146,6 +172,8 @@ var app = new Vue({
 })
 
 </script>
+
+
 
 
 
