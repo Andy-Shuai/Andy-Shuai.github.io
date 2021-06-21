@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://andy-shuai.github.io</id>
     <title>Andy&apos;s Blog</title>
-    <updated>2021-06-20T18:03:02.110Z</updated>
+    <updated>2021-06-21T22:16:22.465Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://andy-shuai.github.io"/>
     <link rel="self" href="https://andy-shuai.github.io/atom.xml"/>
@@ -10,6 +10,37 @@
     <logo>https://andy-shuai.github.io/images/avatar.png</logo>
     <icon>https://andy-shuai.github.io/favicon.ico</icon>
     <rights>All rights reserved 2021, Andy&apos;s Blog</rights>
+    <entry>
+        <title type="html"><![CDATA[Photos 2021-06-21]]></title>
+        <id>https://andy-shuai.github.io/post/Photos 2021-06-21/</id>
+        <link href="https://andy-shuai.github.io/post/Photos 2021-06-21/">
+        </link>
+        <updated>2021-06-20T16:00:00.000Z</updated>
+        <summary type="html"><![CDATA[<p>今天是夏至，节日好心情！</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>今天是夏至，节日好心情！</p>
+<!-- more -->
+<figure data-type="image" tabindex="1"><img src="https://andy-shuai.github.io/post-images/1624313499275.JPG" alt="" loading="lazy"></figure>
+<figure data-type="image" tabindex="2"><img src="https://andy-shuai.github.io/post-images/1624313511206.JPG" alt="" loading="lazy"></figure>
+<figure data-type="image" tabindex="3"><img src="https://andy-shuai.github.io/post-images/1624313521473.JPG" alt="" loading="lazy"></figure>
+<figure data-type="image" tabindex="4"><img src="https://andy-shuai.github.io/post-images/1624313531593.JPG" alt="" loading="lazy"></figure>
+<figure data-type="image" tabindex="5"><img src="https://andy-shuai.github.io/post-images/1624313539543.JPG" alt="" loading="lazy"></figure>
+<figure data-type="image" tabindex="6"><img src="https://andy-shuai.github.io/post-images/1624313558625.JPG" alt="" loading="lazy"></figure>
+<figure data-type="image" tabindex="7"><img src="https://andy-shuai.github.io/post-images/1624313572781.JPG" alt="" loading="lazy"></figure>
+<figure data-type="image" tabindex="8"><img src="https://andy-shuai.github.io/post-images/1624313580265.JPG" alt="" loading="lazy"></figure>
+<figure data-type="image" tabindex="9"><img src="https://andy-shuai.github.io/post-images/1624313589913.PNG" alt="" loading="lazy"></figure>
+<figure data-type="image" tabindex="10"><img src="https://andy-shuai.github.io/post-images/1624313598013.JPG" alt="" loading="lazy"></figure>
+<figure data-type="image" tabindex="11"><img src="https://andy-shuai.github.io/post-images/1624313603866.JPG" alt="" loading="lazy"></figure>
+<figure data-type="image" tabindex="12"><img src="https://andy-shuai.github.io/post-images/1624313611701.PNG" alt="" loading="lazy"></figure>
+<figure data-type="image" tabindex="13"><img src="https://andy-shuai.github.io/post-images/1624313617701.JPG" alt="" loading="lazy"></figure>
+<figure data-type="image" tabindex="14"><img src="https://andy-shuai.github.io/post-images/1624313625046.JPG" alt="" loading="lazy"></figure>
+<figure data-type="image" tabindex="15"><img src="https://andy-shuai.github.io/post-images/1624313635701.JPG" alt="" loading="lazy"></figure>
+<figure data-type="image" tabindex="16"><img src="https://andy-shuai.github.io/post-images/1624313640600.JPG" alt="" loading="lazy"></figure>
+<figure data-type="image" tabindex="17"><img src="https://andy-shuai.github.io/post-images/1624313650033.JPG" alt="" loading="lazy"></figure>
+<figure data-type="image" tabindex="18"><img src="https://andy-shuai.github.io/post-images/1624313672485.JPG" alt="" loading="lazy"></figure>
+<figure data-type="image" tabindex="19"><img src="https://andy-shuai.github.io/post-images/1624313678652.JPG" alt="" loading="lazy"></figure>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Nintendo Direct E3 2021 Recap]]></title>
         <id>https://andy-shuai.github.io/post/nintendo-direct-e3-2021/</id>
